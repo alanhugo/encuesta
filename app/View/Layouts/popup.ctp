@@ -34,7 +34,7 @@
     <link href="<?php echo ENV_WEBROOT_FULL_URL?>css/plugins/codemirror/codemirror.css" rel="stylesheet">
     <link href="<?php echo ENV_WEBROOT_FULL_URL?>css/plugins/codemirror/ambiance.css" rel="stylesheet">
 
-    <link href="<?php echo ENV_WEBROOT_FULL_URL?>css/style.css" rel="stylesheet">
+    <link href="<?php echo ENV_WEBROOT_FULL_URL?>css/style2.css" rel="stylesheet">
 
     <!-- Mainly scripts -->
     <script src="<?php echo ENV_WEBROOT_FULL_URL?>js/jquery-2.1.1.js"></script>
@@ -108,35 +108,12 @@
     <nav class="navbar-default navbar-static-side" role="navigation">
         <div class="sidebar-collapse">
             <!-- Elemento Menu -->
-			<?php echo $this->Element('menu'); ?>
+			
         </div>
     </nav>
 
         <div id="page-wrapper" class="gray-bg">
-        <div class="row border-bottom">
-        <nav class="navbar navbar-static-top" role="navigation" style="margin-bottom: 0">
-        <div class="navbar-header">
-            <a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#"><i class="fa fa-bars"></i> </a>
-            <form role="search" class="navbar-form-custom" action="search_results.html">
-                <div class="form-group">
-                    <input type="text" placeholder="Buscar..." class="form-control" name="top-search" id="top-search">
-                </div>
-            </form>
-        </div>
-            <ul class="nav navbar-top-links navbar-right">
-                <li>
-                    <span class="m-r-sm text-muted welcome-message">Bienvenido <strong>ALAN</strong>.</span>|
-                </li>
-                
-                <li>
-                    <a href="<?php echo ENV_WEBROOT_FULL_URL?>usuarios/logout">
-                        <i class="fa fa-sign-out"></i> Salir
-                    </a>
-                </li>
-            </ul>
 
-        </nav>
-        </div>
         
         <!-- Contenido -->   
         <?php echo $this->fetch('content'); ?>
@@ -146,7 +123,7 @@
                 Calidad Integral.
             </div>
             <div>
-                <strong>Copyright</strong> Alan Hugo &copy; 2015
+                <strong>Copyright</strong> Alan Hugo &copy; 2016
             </div>
         </div>
 

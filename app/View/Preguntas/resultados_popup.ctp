@@ -19,7 +19,7 @@
 		<div class="col-lg-12">
 			<div class="ibox float-e-margins">
 				<div class="ibox-title">
-					<h5>¿Como calificas esta pagina web?</h5>
+					<h5>Resultados</h5>
 					<div class="ibox-tools">
 						<a class="collapse-link"> <i class="fa fa-chevron-up"></i>
 						</a> <a class="dropdown-toggle" data-toggle="dropdown" href="#"> <i
@@ -34,23 +34,16 @@
 					</div>
 				</div>
 				<div class="ibox-content" id="conteiner_all_rows">
-					<div class="table-responsive">
-						<form id="form" action="<?php echo ENV_WEBROOT_FULL_URL?>preguntas/save" method="post">
-							<div>
-							<?php foreach ($arr_obj_opciones as $key => $obj_opciones) {?>
-							<label for="<?php echo $key;?>">&nbsp;&nbsp;&nbsp;<input type="radio" name="respuesta[]" id="<?php echo $key;?>" value="<?php echo $obj_opciones['Opcione']['id'];?>"/> <?php echo $obj_opciones['Opcione']['nombre'];?></label><br>
-							<?php }?>
-							</div>
-							<br>
-							<div>
-                                <button class="btn btn-white" type="submit">Cancel</button>
-                                <button class="btn btn-primary" type="submit">Enviar</button>
-							</div>
-						</form>
+					<div class="alert alert-success alert-dismissable">
+						<button aria-hidden="true" data-dismiss="alert" class="close" type="button">×</button>
+						Gracias por su tiempo!
 					</div>
 				</div>
 			</div>
-
 		</div>
 	</div>
 </div>
+</div>
+<script>
+setTimeout(function(){ window.close(); }, 2000);
+</script>
