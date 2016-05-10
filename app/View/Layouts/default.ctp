@@ -6,99 +6,15 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>InterSMS</title>
-    
-    <!-- <link rel="icon" type="image/png" href="<?php echo ENV_WEBROOT_FULL_URL?>favicon.ico" /> -->
+    <title>Encuesta</title>
 
     <link href="<?php echo ENV_WEBROOT_FULL_URL?>css/bootstrap.min.css" rel="stylesheet">
     <link href="<?php echo ENV_WEBROOT_FULL_URL?>font-awesome/css/font-awesome.css" rel="stylesheet">
-	<link href="<?php echo ENV_WEBROOT_FULL_URL?>css/plugins/iCheck/custom.css" rel="stylesheet">
-	
-    <!-- Data Tables -->
-    <link href="<?php echo ENV_WEBROOT_FULL_URL?>css/plugins/dataTables/dataTables.bootstrap.css" rel="stylesheet">
-    <link href="<?php echo ENV_WEBROOT_FULL_URL?>css/plugins/dataTables/dataTables.responsive.css" rel="stylesheet">
-    <link href="<?php echo ENV_WEBROOT_FULL_URL?>css/plugins/dataTables/dataTables.tableTools.min.css" rel="stylesheet">
-    
-    <!-- Dropzone -->
-    <link href="<?php echo ENV_WEBROOT_FULL_URL?>css/plugins/dropzone/basic.css" rel="stylesheet">
-    <link href="<?php echo ENV_WEBROOT_FULL_URL?>css/plugins/dropzone/dropzone.css" rel="stylesheet">
-    
-    <link href="<?php echo ENV_WEBROOT_FULL_URL?>css/plugins/toastr/toastr.min.css" rel="stylesheet">
-	<link href="<?php echo ENV_WEBROOT_FULL_URL?>css/plugins/jasny/jasny-bootstrap.min.css" rel="stylesheet">
-    
-    <link href="<?php echo ENV_WEBROOT_FULL_URL?>css/plugins/chosen/chosen.css" rel="stylesheet">
-	<link href="<?php echo ENV_WEBROOT_FULL_URL?>css/plugins/datapicker/datepicker3.css" rel="stylesheet">
-
     <link href="<?php echo ENV_WEBROOT_FULL_URL?>css/animate.css" rel="stylesheet">
-
     <link href="<?php echo ENV_WEBROOT_FULL_URL?>css/plugins/codemirror/codemirror.css" rel="stylesheet">
     <link href="<?php echo ENV_WEBROOT_FULL_URL?>css/plugins/codemirror/ambiance.css" rel="stylesheet">
-
     <link href="<?php echo ENV_WEBROOT_FULL_URL?>css/style.css" rel="stylesheet">
 
-    <!-- Mainly scripts -->
-    <script src="<?php echo ENV_WEBROOT_FULL_URL?>js/jquery-2.1.1.js"></script>
-    <script src="<?php echo ENV_WEBROOT_FULL_URL?>js/bootstrap.min.js"></script>
-    <script src="<?php echo ENV_WEBROOT_FULL_URL?>js/plugins/metisMenu/jquery.metisMenu.js"></script>
-    <script src="<?php echo ENV_WEBROOT_FULL_URL?>js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
-    <script src="<?php echo ENV_WEBROOT_FULL_URL?>js/plugins/iCheck/icheck.min.js"></script>
-
-    <!-- Data Tables -->
-    <script src="<?php echo ENV_WEBROOT_FULL_URL?>js/plugins/dataTables/jquery.dataTables.js"></script>
-    <script src="<?php echo ENV_WEBROOT_FULL_URL?>js/plugins/dataTables/dataTables.bootstrap.js"></script>
-    <script src="<?php echo ENV_WEBROOT_FULL_URL?>js/plugins/dataTables/dataTables.responsive.js"></script>
-    <script src="<?php echo ENV_WEBROOT_FULL_URL?>js/plugins/dataTables/dataTables.tableTools.min.js"></script>
-    
-    <!-- Chosen -->
-	<script src="<?php echo ENV_WEBROOT_FULL_URL?>js/plugins/chosen/chosen.jquery.js"></script>
-	
-	<!-- Data picker -->
-	<script src="<?php echo ENV_WEBROOT_FULL_URL?>js/plugins/datapicker/bootstrap-datepicker.js"></script>
-	
-	<!-- Highchart -->
-	<script src="<?php echo ENV_WEBROOT_FULL_URL?>js/plugins/highcharts-4.1.5/highcharts.js"></script>
-	
-	<!-- Input Mask-->
-    <script src="<?php echo ENV_WEBROOT_FULL_URL?>js/plugins/jasny/jasny-bootstrap.min.js"></script>
-
-    <!-- Custom and plugin javascript -->
-    <script src="<?php echo ENV_WEBROOT_FULL_URL?>js/inspinia.js"></script>
-    <script src="<?php echo ENV_WEBROOT_FULL_URL?>js/plugins/pace/pace.min.js"></script>
-    <script src="<?php echo ENV_WEBROOT_FULL_URL?>js/plugins/peity/jquery.peity.min.js"></script>
-    <script src="<?php echo ENV_WEBROOT_FULL_URL?>js/demo/peity-demo.js"></script>
-    <script src="<?php echo ENV_WEBROOT_FULL_URL?>js/plugins/toastr/toastr.min.js"></script>
-	<script src="<?php echo ENV_WEBROOT_FULL_URL?>js/plugins/dropzone/dropzone.js"></script>
-	<script src="<?php echo ENV_WEBROOT_FULL_URL?>js/plugins/video/responsible-video.js"></script>
-	
-	<!-- Upload image (Foto de usuario) -->
-	<script src="<?php echo ENV_WEBROOT_FULL_URL?>js/bootstrap-fileupload.js"></script>
-
-
-    <script>
-	$(document).ready(function () {
-		var myProccess;
-	    myProccess = myProccess || (function () {
-
-			var pleaseWaitDiv = $('<div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel"><div class="modal-dialog modal-sm"><div class="modal-content" style="padding:10px;">Procesando.. <div class="sk-spinner sk-spinner-three-bounce"><div class="sk-bounce1"></div><div class="sk-bounce2"></div><div class="sk-bounce3"></div></div></div></div></div>');
-		    
-			return {
-				showPleaseWait: function () {
-					pleaseWaitDiv.modal({backdrop: 'static',keyboard: false});
-				},
-				hidePleaseWait: function () {
-					pleaseWaitDiv.modal('hide');
-				},
-			};
-		})();
-		
-		$('.i-checks').iCheck({
-			checkboxClass: 'icheckbox_square-green',
-			radioClass: 'iradio_square-green',
-		});
-
-		$('[data-toggle="tooltip"]').tooltip();
-	});
-	</script>
 </head>
 
 <body class="pace-done mini-navbar">
@@ -153,30 +69,31 @@
         </div>
         </div>
     
-    <!-- Scripts de Mantenimientos -->
-    <!--<script src="<?= ENV_WEBROOT_FULL_URL;?>js/ajax/<?php echo $this->request->controller;?>.js" type="text/javascript"></script>-->
-    <script>var env_webroot_script = '<?php echo ENV_WEBROOT_FULL_URL; ?>';</script>
     
+    <!-- Mainly scripts -->
+    <script src="<?php echo ENV_WEBROOT_FULL_URL?>js/jquery-2.1.1.js"></script>
+    <script src="<?php echo ENV_WEBROOT_FULL_URL?>js/bootstrap.min.js"></script>
+    <script src="<?php echo ENV_WEBROOT_FULL_URL?>js/plugins/metisMenu/jquery.metisMenu.js"></script>
+    <script src="<?php echo ENV_WEBROOT_FULL_URL?>js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+
     <!-- CodeMirror -->
     <script src="<?php echo ENV_WEBROOT_FULL_URL?>js/plugins/codemirror/codemirror.js"></script>
     <script src="<?php echo ENV_WEBROOT_FULL_URL?>js/plugins/codemirror/mode/javascript/javascript.js"></script>
 
+    <!-- Custom and plugin javascript -->
+    <script src="<?php echo ENV_WEBROOT_FULL_URL?>js/inspinia.js"></script>
+    <script src="<?php echo ENV_WEBROOT_FULL_URL?>js/plugins/pace/pace.min.js"></script>
+
+    <script>var env_webroot_script = '<?php echo ENV_WEBROOT_FULL_URL; ?>';</script>
+    <script>var env_webroot_script_popup = '<?php echo str_replace("http:","",ENV_WEBROOT_FULL_URL);?>';</script>
+
     <script>
          $(document).ready(function(){
-
-             var editor_one = CodeMirror.fromTextArea(document.getElementById("code1"), {
-                 lineNumbers: true,
-                 matchBrackets: true,
-                 styleActiveLine: true,
-                 theme:"ambiance"
-             });
-
              var editor_two = CodeMirror.fromTextArea(document.getElementById("code2"), {
                  lineNumbers: true,
                  matchBrackets: true,
                  styleActiveLine: true
              });
-
         });
     </script>
 

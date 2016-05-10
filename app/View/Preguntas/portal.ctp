@@ -11,7 +11,7 @@
 	</div>
 </div>
 
-<div class="wrapper wrapper-content animated fadeInRight">
+<div class="wrapper wrapper-content animated fadeInRight" style="padding: 20px 10px 0px;">
 	<div id="add_edit_groupcmd_container">
 	</div>
 	<p>
@@ -43,16 +43,16 @@
 	</div>
 </div>
 
-<div class="wrapper wrapper-content  animated fadeInRight">
-    <div class="row">
-        <div class="col-lg-6">
-            <div class="ibox ">
-                <div class="ibox-title">
-                    <h5>Code Editor</h5>
-                </div>
-                <div class="ibox-content">
 
-					<textarea id="code2" style="width: 100%;height: 260px;">
+<div class="wrapper wrapper-content  animated fadeInRight">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="ibox ">
+                        <div class="ibox-title">
+                            <h5>Code Editor</h5>
+                        </div>
+                        <div class="ibox-content">
+<textarea id="code2">
 <script>(function(d, s, id) {
   var js, lajs = d.getElementsByTagName(s)[0];
   if (d.getElementById(id)) return;
@@ -60,15 +60,18 @@
   js.src = "<?php echo str_replace("http:","",ENV_WEBROOT_FULL_URL);?>js/app.js#appId=NTFkZjNlMjEyMGI1NjVi";
   lajs.parentNode.insertBefore(js, lajs);
 }(document, 'script', 'livingalpha-jssdk'));</script>
+
 <div class="la-login">
 <a href="javascript:;" id="la-login-button" class="la-login-button"><i class="la-icon-button"></i>Denos su opinion</a>
 </div>
-					</textarea>
+</textarea>
+                        </div>
 
+                    </div>
                 </div>
             </div>
         </div>
-	</div>
-</div>
 
+
+      
 </div>
